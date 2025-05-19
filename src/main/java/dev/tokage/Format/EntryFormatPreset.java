@@ -24,10 +24,6 @@ public enum EntryFormatPreset implements EntryFormatter {
         this.strategy = strategy;
     }
 
-    public EntryFormatter getStrategy() {
-        return strategy;
-    }
-
     @Override
     public String generate(LogEntry entry) {
         return strategy.generate(entry);

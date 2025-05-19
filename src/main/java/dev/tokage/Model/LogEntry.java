@@ -1,15 +1,14 @@
 package dev.tokage.Model;
 
 
-import java.time.LocalDateTime;
 import java.util.logging.Level;
 
 public class LogEntry {
-    private Level level;
-    private String message;
+    private final Level level;
+    private final String message;
     private String key;
     private Throwable error;
-    private long time;
+    private final long time;
 
     public LogEntry(Level level, String message, String key, Throwable error) {
         this.level = level;
